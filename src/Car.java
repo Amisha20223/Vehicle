@@ -3,10 +3,16 @@ public class Car extends Vehicle{
 //    public Car(int seats) {
 //        this.seats = seats;
 public Car(int seats) {
-    super(brand,fuel);
-    void displayInfo(){
+    super("max" ,5.0);
+    this.seats=seats;
+    String names;
+public Car(String name)   {
+    super("newnew",7);
+    }
+
+   void displayInfo(){
         super.displayInfo();
-        System.out.println("Seats: " + s.eats);
+        System.out.println("Seats: ");
     }
 //    this.seats = seats;
     }

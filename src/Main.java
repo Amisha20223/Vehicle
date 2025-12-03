@@ -35,6 +35,9 @@ public class Main{
                     case 2:
                         vehicle.fuelUp();
                         break;
+                    case 3:
+                        vehicle.travelDistance();
+                        break;
 
                 }
             }

@@ -1,10 +1,11 @@
 public class Bike extends Vehicle {
     boolean hasCarrier;
     Bike(String brand,  double seats,  boolean hasCarrier) {
-        super(brand,fuel);
+        super("moto",5.0);
         this.hasCarrier = hasCarrier;
     }
-    void displayInfo(){
+    @Override
+   public void displayInfo(){
         super.displayInfo();
         System.out.println();
     }
