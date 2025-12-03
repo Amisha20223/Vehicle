@@ -1,25 +1,39 @@
 
-class Vehicle {
+class Vehicle
+{
+    String brand;
+    double fuel;
+    Vehicle(String brand,double fuel){
+        this.brand=brand;
+        this.fuel=fuel;
+    }
+
+
+
     public void displayInfo() {
-        this.brand = brand;
-        this.fuel = fuel;
+
         System.out.println(brand);
         System.out.println(fuel);
         //show
     }
 
-    public int fuelUp() {
+    public void fuelUp() {
         //adds 10 liters
+        fule = fuel+10;
+        System.out.println("fuel up");
 
 
     }
 
-    public int fuelUp() {
+    public void fuelUp(double liters) {
+        fuel = fuel+liters;
         //add given number of liters
+        System.out.println("fuel up");
 
     }
 
-    public void travelDistance() {
+    public double travelDistance(double efficiency) {
+        //return
         //double efficiency
     }
 }

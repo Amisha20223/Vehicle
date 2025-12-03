@@ -1,15 +1,44 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
-public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
+import java.util.Scanner;
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
+public class Main{
+    public static void main(String[] args){
+        Scanner input = new Scanner(System.in);
+        Vehicle vehicle = null;
+        while (true){
+            System.out.println("Enter vehicle name: ");
+            System.out.println("Cawr"
+            );
+            System.out.println("bike");
+            System.out.println("exit");
+            int choice = input.nextInt();
+            switch(choice){
+                case 1:
+                    vehicle=new Car(20);
+                    break;
+                case 2:
+                    vehicle = new Bike("londo", 10,true);
+                    break;
+                case 3:
+                    System.out.println("exit");
+                default:
+                    System.out.println("Invalid choice");
+                    continue;
+            }
+            while(true){
+                System.out.println("Enter vehicle type: ");
+                System.out.println("Cawr");
+                int action = sc.nextInt();
+                switch(action){
+                    case 1:
+                        vehicle.displayInfo();
+                        break;
+                    case 2:
+                        vehicle.fuelUp();
+                        break;
+
+                }
+            }
+
         }
     }
 }
