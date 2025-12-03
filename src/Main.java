@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Main{
     public static void main(String[] args){
-        Scanner input = new Scanner(System.in);
+        Scanner sc = new Scanner(System.in);
         Vehicle vehicle = null;
         while (true){
             System.out.println("Enter vehicle name: ");
@@ -10,10 +10,10 @@ public class Main{
             );
             System.out.println("bike");
             System.out.println("exit");
-            int choice = input.nextInt();
+            int choice = sc.nextInt();
             switch(choice){
                 case 1:
-                    vehicle=new Car(20);
+                    vehicle=new Car("max", 5.0,30);
                     break;
                 case 2:
                     vehicle = new Bike("londo", 10,true);
@@ -35,9 +35,9 @@ public class Main{
                     case 2:
                         vehicle.fuelUp();
                         break;
-                    case 3:
-                        vehicle.travelDistance();
-                        break;
+//                    case 3:
+//                        vehicle.travelDistance();
+//                        break;
 
                 }
             }

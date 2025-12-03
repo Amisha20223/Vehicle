@@ -19,7 +19,7 @@ class Vehicle
 
     public void fuelUp() {
         //adds 10 liters
-        fule = fuel+10;
+        double fule = fuel+10;
         System.out.println("fuel up");
 
 
@@ -32,7 +32,11 @@ class Vehicle
 
     }
 
+
     public double travelDistance(double efficiency) {
+        //fuel = fuel-efficiency;
+        return fuel * efficiency; //double leke ye krte
+
         //return
         //double efficiency
     }
